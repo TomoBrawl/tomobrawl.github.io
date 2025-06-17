@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brawl Stars Mods (FREE)</title>
   <meta name="google-adsense-account" content="ca-pub-4073805821280468">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
-     crossorigin="anonymous"></script>
-  <link rel=icon href=lgo.png>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468" crossorigin="anonymous"></script>
+  <link rel="icon" href="lgo.png">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -192,17 +191,35 @@
         margin-bottom: 10px;
       }
     }
+
+    /* searchInput */
+    #searchInput {
+      width: 300px;
+      padding: 10px;
+      margin: 30px auto;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid #00ffe1;
+      background-color: #2d2d4d;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
 
- <header>
-    <h1>Brawl Stars Mods... (FREE)</h1> <img src="Tomo.png" alt="Game Icon" class="icon-img">
+  <header>
+    <h1>Brawl Stars Mods... (FREE)</h1> 
+   <p>We update the mods on this site whenever they are updated, so you can come and update them too.<p>
+  <img src="Tomo.png" alt="Game Icon" class="icon-img">
   </header>
+
+  <!-- search -->
+  <input type="text" id="searchInput" placeholder="Search for mod..." onkeyup="searchSite()" />
+
   <div class="container">
     <h2>Tomo Brawl</h2>
     <h2>Official server</h2>
-    <p>There is no risk of ban in this cheat. This cheat only includes aim and dodge. Apart from that, there is no risk. It was made by changing the BSD brawl codes. So you don't need to be afraid. We checked everything. There is no risk of ban.</p>
+    <p>This mode is aim and dodge cheat, so with this mode you can earn trophies more easily or beat your friends in versus, it is very easy to download.</p>
     <a href="https://gofile.io/d/SDD1Ec" class="download-btn">Download</a>
   </div>
  <div class="requirements">
@@ -301,7 +318,9 @@
 <p>Mods are modified versions of the original game that offer extra features and advantages not available in the official release. These versions are often created by third parties and can give players access to resources like unlimited gems, coins, and power points. Mods may also unlock all characters (brawlers) automatically, regardless of a players progress in the game. In addition, they can include custom skins, new visual effects, or even unofficial brawler abilities. Some mods change game mechanics, making characters faster, stronger, or invincible, which can make the game easier or more chaotic. While these mods might seem fun or helpful, they are not supported by Supercell and can lead to security risks, such as data loss or malware. Moreover, players who use mods can have their accounts permanently banned for violating the games terms of service.<p>
 <p>Unofficial versions of the game that change how it functions, often creating a completely different experience from the original. Unlike the regular app, these mods can include experimental features like custom events, fan-made characters, or alternative user interfaces. Some versions focus less on cheating and more on creativity, offering new ways to play that dont exist in the base game. For example, you might find mods with new sound effects, reimagined maps, or entirely new game rules. These mods are typically used for fun in private environments and are not meant for competitive or online ranked play. Still, since theyre not officially approved, downloading them can be risky and might expose your device to harmful software or get your game account suspended.<p>
 <p>Offer an altered version of the game that often appeals to players looking for something different from the standard gameplay. These versions may be created by independent developers or fans, and they allow players to explore features that are normally locked or unavailable. Instead of grinding through levels or spending real money, users can instantly access high-level content, maxed-out brawlers, and customizations. Some mods focus on visual changeslike new backgrounds, icons, or menuswhile others introduce entirely new mechanics that dont exist in the official game. While they can provide a fresh and fun experience, these mods operate outside the control of Supercell, meaning they can be unstable, unsupported, or even harmful to your device or account.<p>
-  </div>
+  <img src="play.png" alt="">
+<p>When these mods are updated, you need to go back to this site and download the mod.<p>
+</div>
 
   <!-- Comments-->
   <div class="comments">
@@ -330,8 +349,30 @@
   </div>
 
   <footer>
-     2025 TomoBrawl | All rights reserved.
+    2025 TomoBrawl | All rights reserved.
   </footer>
+
+  <!-- searchSite -->
+  <script>
+    function searchSite() {
+      var input = document.getElementById("searchInput").value.toLowerCase().trim();
+      var keywords = input.split(/\s+/); // 
+      var elements = document.querySelectorAll(".container, .comments .comment");
+
+      elements.forEach(function(el) {
+        var text = el.textContent.toLowerCase();
+        var matchesAll = keywords.every(function(word) {
+          return text.includes(word);
+        });
+
+        if (matchesAll) {
+          el.style.display = "";
+        } else {
+          el.style.display = "none";
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
