@@ -16,6 +16,48 @@
       padding: 0;
     }
 
+    /* Menü stili */
+    .top-menu {
+      background-color: #1a1a2e;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .top-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-menu li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .top-menu a {
+      background-color: #fff;
+      color: #1a1a2e;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-size: 1rem;
+      box-shadow: 0 3px 8px rgba(255, 255, 255, 0.2);
+    }
+
+    .top-menu a:hover {
+      background-color: #00ffe1;
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #00ffe1;
+    }
+
     header {
       background-color: #292947;
       padding: 20px;
@@ -192,7 +234,6 @@
       }
     }
 
-    /* searchInput */
     #searchInput {
       width: 300px;
       padding: 10px;
@@ -207,21 +248,29 @@
 </head>
 <body>
 
+  <!-- Menü -->
+  <nav class="top-menu">
+    <ul>
+      <li><a href="https://brawlmods.natesworks.com/" target="_blank" rel="noopener noreferrer">Natesworks</a></li>
+      <li><a href="https://brawlsmod.github.io/" target="_blank" rel="noopener noreferrer">Brawlsmod</a></li>
+      <li><a href="https://discord.com/invite/clb" target="_blank" rel="noopener noreferrer">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Brawl Stars Mods... (FREE)</h1> 
-   <p>You can come to this site to download the latest version of Brawl Stars mods. Have fun playing now.<p>
+    <p>You can come to this site to download the latest version of Brawl Stars mods. Have fun playing now.</p>
   </header>
 
-  <!-- search -->
   <input type="text" id="searchInput" placeholder="Search for mod..." onkeyup="searchSite()" />
 
-  <div class="container">
+  <div class="container" id="mods">
     <h2>Nani Brawl</h2>
     <h2>Official server</h2>
     <p>This mode is aim and dodge cheat, so with this mode you can earn trophies more easily or beat your friends in versus, it is very easy to download.</p>
-    <a href="https://gofile.io/d/SDD1Ec" class="download-btn">Download</a>
+    <a href="https://gofile.io/d/SDD1Ec" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
   </div>
-  <div class="container">
+ <div class="container">
     <h2>BSD Brawl</h2>
     <h2>Official server</h2>
     <p>Allows changing server region, viewing enemies ammo and more!</p>
@@ -311,11 +360,13 @@
     <p>For those who do not have a goal in brawl stars, this mode is for them the game is offline.</p>
     <a href="https://www.mediafire.com/file/7gskpz9kijgbpgy/aimbot+brawl.apk/file" class="download-btn">Download</a>
   </div>
-<p>Brawl Stars mods provide players with advantages and features that are not available in the official version of the game. These mods often include unlimited gems and coins, allowing users to unlock boxes, upgrade characters, and purchase skins without limitations. All brawlers may be unlocked from the beginning, removing the need to collect them through gameplay or random rewards. Some mods enhance character abilities by increasing damage, health, or modifying special powers. Custom maps and unavailable game modes can also be accessed through certain mods, offering a unique or altered gameplay experience. Additionally, some mods introduce cheat-like features such as wall hacks, speed boosts, or invisibility. However, using such mods can disrupt the fair play environment and carries the risk of account bans by Supercell, the game developer.<p>
-<p>Mods are modified versions of the original game that offer extra features and advantages not available in the official release. These versions are often created by third parties and can give players access to resources like unlimited gems, coins, and power points. Mods may also unlock all characters (brawlers) automatically, regardless of a players progress in the game. In addition, they can include custom skins, new visual effects, or even unofficial brawler abilities. Some mods change game mechanics, making characters faster, stronger, or invincible, which can make the game easier or more chaotic. While these mods might seem fun or helpful, they are not supported by Supercell and can lead to security risks, such as data loss or malware. Moreover, players who use mods can have their accounts permanently banned for violating the games terms of service.<p>
-<p>Unofficial versions of the game that change how it functions, often creating a completely different experience from the original. Unlike the regular app, these mods can include experimental features like custom events, fan-made characters, or alternative user interfaces. Some versions focus less on cheating and more on creativity, offering new ways to play that dont exist in the base game. For example, you might find mods with new sound effects, reimagined maps, or entirely new game rules. These mods are typically used for fun in private environments and are not meant for competitive or online ranked play. Still, since theyre not officially approved, downloading them can be risky and might expose your device to harmful software or get your game account suspended.<p>
-<p>Offer an altered version of the game that often appeals to players looking for something different from the standard gameplay. These versions may be created by independent developers or fans, and they allow players to explore features that are normally locked or unavailable. Instead of grinding through levels or spending real money, users can instantly access high-level content, maxed-out brawlers, and customizations. Some mods focus on visual changeslike new backgrounds, icons, or menuswhile others introduce entirely new mechanics that dont exist in the official game. While they can provide a fresh and fun experience, these mods operate outside the control of Supercell, meaning they can be unstable, unsupported, or even harmful to your device or account.<p>
-<p>Brawl Stars mods are unofficial versions of the original Brawl Stars game that have been altered or enhanced by independent developers. These modifications are not approved or supported by Supercell, the official creator of the game. Instead, they are created to provide users with different experiences, advantages, or visual changes that are not available in the original game.
+  <div class="info-section">
+    <p>Brawl Stars mods provide players with advantages and features that are not available in the official version of the game. These mods often include unlimited gems and coins, allowing users to unlock boxes, upgrade characters, and purchase skins without limitations. All brawlers may be unlocked from the beginning, removing the need to collect them through gameplay or random rewards. Some mods enhance character abilities by increasing damage, health, or modifying special powers. Custom maps and unavailable game modes can also be accessed through certain mods, offering a unique or altered gameplay experience. Additionally, some mods introduce cheat-like features such as wall hacks, speed boosts, or invisibility. However, using such mods can disrupt the fair play environment and carries the risk of account bans by Supercell, the game developer.<p>
+    <p>Mods are modified versions of the original game that offer extra features and advantages not available in the official release. These versions are often created by third parties and can give players access to resources like unlimited gems, coins, and power points. Mods may also unlock all characters (brawlers) automatically, regardless of a players progress in the game. In addition, they can include custom skins, new visual effects, or even unofficial brawler abilities. Some mods change game mechanics, making characters faster, stronger, or invincible, which can make the game easier or more chaotic. While these mods might seem fun or helpful, they are not supported by Supercell and can lead to security risks, such as data loss or malware. Moreover, players who use mods can have their accounts permanently banned for violating the games terms of service.<p> 
+    <p>Unofficial versions of the game that change how it functions, often creating a completely different experience from the original. Unlike the regular app, these mods can include experimental features like custom events, fan-made characters, or alternative user interfaces. Some versions focus less on cheating and more on creativity, offering new ways to play that dont exist in the base game. For example, you might find mods with new sound effects, reimagined maps, or entirely new game rules. These mods are typically used for fun in private environments and are not meant for competitive or online ranked play. Still, since theyre not officially approved, downloading them can be risky and might expose your device to harmful software or get your game account suspended.<p>
+    <p>Offer an altered version of the game that often appeals to players looking for something different from the standard gameplay. These versions may be created by independent developers or fans, and they allow players to explore features that are normally locked or unavailable. Instead of grinding through levels or spending real money, users can instantly access high-level content, maxed-out brawlers, and customizations. Some mods focus on visual changeslike new backgrounds, icons, or menuswhile others introduce entirely new mechanics that dont exist in the official game. While they can provide a fresh and fun experience, these mods operate outside the control of Supercell, meaning they can be unstable, unsupported, or even harmful to your device or account.<p>
+    <p>Brawl Stars mods are unofficial versions of the original Brawl Stars game that have been altered or enhanced by independent developers. These modifications are not approved or supported by Supercell, the official creator of the game. Instead, they are created to provide users with different experiences, advantages, or visual changes that are not available in the original game.<p> 
+    <p>Brawl Stars mods are unofficial versions of the original Brawl Stars game that have been altered or enhanced by independent developers. These modifications are not approved or supported by Supercell, the official creator of the game. Instead, they are created to provide users with different experiences, advantages, or visual changes that are not available in the original game.
 
 Most mods include features that go beyond what regular players can access. For example, many of them offer unlimited gems and coins, which normally require either a lot of gameplay or real-money purchases. This allows players to unlock brawlers, skins, and other in-game items instantly. Some mods also come with all brawlers unlocked from the beginning, eliminating the need to earn trophies or progress through the trophy road.
 
@@ -327,21 +378,30 @@ Additionally, mods are not verified by any trusted sources. Downloading them fro
 
 Many mods also lack the stability and performance of the official game. Since they are not built or tested by the original developers, they may contain bugs, crash frequently, or fail to connect to any servers at all. Players might find that the gameplay experience is less enjoyable or inconsistent compared to the official version.
 
-In short, while Brawl Stars mods can seem fun and offer exciting features, they come with significant risks — including bans, security threats, and unstable gameplay. Players who want to enjoy Brawl Stars safely and fairly are strongly advised to stick with the official version from Supercell. Supporting the official game also helps developers continue to improve and expand it over time.
+In short, while Brawl Stars mods can seem fun and offer exciting features, they come with significant risks — including bans, security threats, and unstable gameplay. Players who want to enjoy Brawl Stars safely and fairly are strongly advised to stick with the official version from Supercell. Supporting the official game also helps developers continue to improve and expand it over time.<p>
+    <p>Brawl Stars mods are alternative versions of the popular mobile game created by fans or third-party developers who want to offer new features and freedoms not available in the official app. These mods allow players to bypass many restrictions set by the original game, opening up a world of possibilities for customization and gameplay variety.
 
-<p>
-  <img src="play.png" alt="">
-<p>When these mods are updated, you need to go back to this site and download the mod.<p>
-</div>
+One of the main reasons people turn to Brawl Stars mods is to gain access to resources like unlimited gems, coins, and power points. In the official game, these resources take time to collect or require in-app purchases, but mods can provide them instantly. This means players can unlock all characters and upgrade them to max level right away, without grinding or spending money.
+
+Mods also often include unique customization options such as special skins, effects, or even completely new characters that don’t exist in the official game. This creates a fresh experience for players who want something different from the standard gameplay. Some mods run on separate private servers where players can interact in a modified environment with others using the same mod.
+
+Despite their appeal, it’s important to remember that mods come with significant risks. Since they are unofficial and unauthorized, using them may lead to account suspension or permanent bans on the official servers. Moreover, downloading mods from unreliable sources can expose your device to malware or viruses, risking your privacy and security.
+
+Technically, mods can also be unstable and prone to crashes because they are not developed or tested by Supercell. This can lead to frustrating gameplay experiences. Additionally, since mods change game data, multiplayer balance is lost, making the gameplay unfair or uncompetitive compared to the official game.
+
+In summary, while Brawl Stars mods offer exciting advantages like instant access to content and unique features, they come with serious drawbacks. Players interested in a safe and fair gaming experience should stick to the official version of Brawl Stars to avoid risks related to security, fairness, and account safety.<p>
+<img src="play.png" alt="">
+    <p>All brawl stars mods are free and latest version. These mods were made by us and others. Enjoy the mods.</p>
+  </div>
+
   <footer>
     2025 TomoBrawl | All rights reserved.
   </footer>
 
-  <!-- searchSite -->
   <script>
     function searchSite() {
       var input = document.getElementById("searchInput").value.toLowerCase().trim();
-      var keywords = input.split(/\s+/); // 
+      var keywords = input.split(/\s+/);
       var elements = document.querySelectorAll(".container, .comments .comment");
 
       elements.forEach(function(el) {
@@ -358,6 +418,5 @@ In short, while Brawl Stars mods can seem fun and offer exciting features, they 
       });
     }
   </script>
-
 </body>
 </html>
